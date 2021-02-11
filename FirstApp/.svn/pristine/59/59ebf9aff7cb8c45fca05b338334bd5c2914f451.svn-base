@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="myarray">
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+    </string-array>
+
+    <string-array name="arrayAnimal">
+        <item>小狗</item>
+        <item>小猫</item>
+        <item>小鸡</item>
+    </string-array>
+</resources>

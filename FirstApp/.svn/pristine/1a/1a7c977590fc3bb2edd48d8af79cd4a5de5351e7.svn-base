@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">数字大脑</string>
+    <string name="send_message">message</string>
+    <string name="send_button">send</string>
+</resources>

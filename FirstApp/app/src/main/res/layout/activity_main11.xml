@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main11Activity">
+    <EditText
+        android:id="@+id/param_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入名称"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/param_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/param_name"/>
+
+    <Button
+        android:id="@+id/btn_webtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="webservice接口测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/param_pwd"/>
+
+    <Button
+        android:id="@+id/btn_gettest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_webtest"/>
+
+    <Button
+        android:id="@+id/btn_posttest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gettest"/>
+
+    <Button
+        android:id="@+id/btn_volleytest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volley登录测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_posttest"/>
+    <Button
+        android:id="@+id/btn_volleylogouttest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volley退出测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volleytest"/>
+    <Button
+        android:id="@+id/btn_volleyquerytest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volley查询测试"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volleylogouttest"/>
+
+    <TextView
+        android:id="@+id/webtest_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="结果显示："
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volleyquerytest"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

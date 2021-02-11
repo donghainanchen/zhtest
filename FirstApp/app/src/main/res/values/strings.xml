@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">南海东辰</string>
+    <string name="send_message">message</string>
+    <string name="send_message2">message2</string>
+    <string name="send_button">send</string>
+    <item name="Tag_Data" type="id"></item>
+    <item name="Tag_Animal" type="id"></item>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="font_blue">蓝色</string>
+    <string name="font_green">绿色</string>
+    <string name="font_red">红色</string>
+
+    <string name="tab_title_name">测试</string>
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

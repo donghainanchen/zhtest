@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">南海东辰</string>
+    <string name="send_message">message</string>
+    <string name="send_button">send</string>
+</resources>

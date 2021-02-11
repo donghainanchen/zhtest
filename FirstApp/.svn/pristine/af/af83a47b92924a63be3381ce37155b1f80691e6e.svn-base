@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <TextView
+        android:id="@+id/sendmessage3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="发送信息"
+        android:textColor="#000000"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendmessage3"
+        android:layout_marginTop="12dp"
+        android:text="添加"
+        app:layout_constraintEnd_toStartOf="@+id/btn_addx"
+        app:layout_constraintTop_toBottomOf="@id/sendmessage3" />
+
+    <Button
+        android:id="@+id/btn_addx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/btn_add"
+        android:text="添加X"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/btn_add" />
+    <Button
+        android:id="@+id/btn_deletex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/btn_addx"
+        android:text="删除X"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_addx"
+        app:layout_constraintStart_toEndOf="@+id/btn_addx"/>
+    <Button
+        android:id="@+id/btn_deleteall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/btn_deletex"
+        android:text="全删除"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_deletex"
+        app:layout_constraintStart_toEndOf="@+id/btn_deletex"/>
+    <EditText
+        android:id="@+id/view_number"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/btn_deleteall"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_deleteall"
+        app:layout_constraintStart_toEndOf="@+id/btn_deleteall"/>
+
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ListView
+        android:id="@+id/list_animal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/list_data"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_number"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
