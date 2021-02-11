@@ -188,6 +188,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         if (mFindFragment != null) {
             transaction.hide(mFindFragment);
         }
+
         if (mMineFragment != null) {
             transaction.hide(mMineFragment);
         }
